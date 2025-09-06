@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 title {
@@ -9,7 +10,6 @@ title {
 }
 
 body {
- 
   font-family: Arial, sans-serif;
   background: #101829;
   z-index: 1;
@@ -61,14 +61,14 @@ nav a:hover {
   color: #101829;
 }
 
-#texto {
+#welcome {
   display: inline-block;
   position: absolute;
   z-index: 10;     
   color: aliceblue;    
   font-size: 3rem;
   top: 45%;
-  left: 10%;
+  left: 5%;
 }
 
 .cursor {
@@ -80,3 +80,20 @@ nav a:hover {
   50% { border-color: rgb(255, 255, 255); }
 }
 
+.AboutMe {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+}
+
+.AboutMe h1 {
+  font-size: 2.5rem;
+  left: 50%;
+}
+.AboutMe p{
+  text-align: center;
+  font-family: sans-serif, inter;
+}

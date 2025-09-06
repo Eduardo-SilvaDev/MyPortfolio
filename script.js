@@ -6,20 +6,20 @@ const linhas = [
 let linha = 0;
 let char = 0;
 const velocidade = 80;
-const elemento = document.getElementById("texto");
+const elemento = document.getElementById("welcome");
 
 function digitar() {
     if (linha < linhas.length) {
         if (char < linhas[linha].length) {
             // Remove o cursor antes de atualizar
-            let textoAtual = elemento.innerHTML.replace(/<span class="cursor"><\/span>$/, "");
-            elemento.innerHTML = textoAtual + linhas[linha].charAt(char) + '<span class="cursor"></span>';
+            let welcomeAtual = elemento.innerHTML.replace(/<span class="cursor"><\/span>$/, "");
+            elemento.innerHTML = welcomeAtual + linhas[linha].charAt(char) + '<span class="cursor"></span>';
             char++;
             setTimeout(digitar, velocidade);
         } else {
             // Remove o cursor antes de pular linha
-            let textoAtual = elemento.innerHTML.replace(/<span class="cursor"><\/span>$/, "");
-            elemento.innerHTML = textoAtual + "<br>";
+            let welcomeAtual = elemento.innerHTML.replace(/<span class="cursor"><\/span>$/, "");
+            elemento.innerHTML = welcomeAtual + "<br>";
             linha++;
             char = 0;
             setTimeout(digitar, velocidade * 3);
