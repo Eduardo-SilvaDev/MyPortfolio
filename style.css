@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: none;
-
 }
 
 title {
@@ -66,8 +65,8 @@ nav a:hover {
 #welcome {
   display: inline-block;
   position: absolute;
-  z-index: 10;     
-  color: aliceblue;    
+  z-index: 10;
+  color: aliceblue;
   font-size: 3rem;
   top: 45%;
   left: 5%;
@@ -80,7 +79,9 @@ nav a:hover {
 }
 
 @keyframes blink {
-  50% { border-color: rgb(255, 255, 255); }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 
 .AboutMe {
@@ -89,14 +90,15 @@ nav a:hover {
   color: #fff;
   left: 50%;
   transform: translateX(-50%);
-  top: 100%;
+  top: 150%;
 }
 
 .AboutMe h1 {
   font-size: 2.5rem;
   left: 50%;
 }
-.AboutMe p{
+
+.AboutMe p {
   text-align: center;
   font-family: sans-serif, inter;
 }
@@ -116,3 +118,23 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+
+#Skills{
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+}
+
+#Skills img {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
