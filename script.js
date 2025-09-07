@@ -1,3 +1,4 @@
+const body = document.body;
 const linhas = [
     "Olá, eu sou o Eduardo",
     "Seja bem vindo ao meu portfólio!",

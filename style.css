@@ -13,6 +13,7 @@ body {
   font-family: Arial, sans-serif;
   background: #101829;
   z-index: 1;
+  overflow: hidden;
 }
 
 header {
@@ -101,10 +102,15 @@ nav a:hover {
 
 .imagePerfil img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   display: inline-block;
   position: absolute;
   left: 20%;
-  top: 20%;
+  top: 15%;
+}
+
+.imagePerfil img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
