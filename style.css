@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+  scrollbar-width: none;
+
 }
 
 title {
@@ -13,7 +14,7 @@ body {
   font-family: Arial, sans-serif;
   background: #101829;
   z-index: 1;
-  overflow: hidden;
+
 }
 
 header {
@@ -33,7 +34,7 @@ header {
   transition: background 0.3s;
 }
 
-.logo {
+#logo {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -114,3 +115,4 @@ nav a:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+
