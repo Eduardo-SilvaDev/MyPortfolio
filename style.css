@@ -10,10 +10,9 @@ title {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   background: #101829;
   z-index: 1;
-
 }
 
 header {
@@ -88,18 +87,18 @@ nav a:hover {
   display: inline-block;
   position: absolute;
   color: #fff;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
-  top: 150%;
+  top: 10%;
 }
 
 .AboutMe h1 {
   font-size: 2.5rem;
-  left: 50%;
+  text-align: center;
 }
 
 .AboutMe p {
-  text-align: center;
+  text-align: right;
   font-family: sans-serif, inter;
 }
 
@@ -132,9 +131,12 @@ nav a:hover {
   width: 100px;
   height: auto;
   margin-top: 20px;
-  display: inline-block;
-  position: absolute;
-  left: 50%;
+  align-items: center;
+  align-content: center;
   transform: translateX(-50%);
-  
+}
+
+#Skills img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
