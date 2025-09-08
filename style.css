@@ -67,7 +67,7 @@ nav a:hover {
   z-index: 10;
   color: aliceblue;
   font-size: 3rem;
-  top: 45%;
+  top: 60%;
   left: 5%;
   font-weight: 700;
 }
@@ -109,7 +109,7 @@ nav a:hover {
   display: inline-block;
   position: absolute;
   left: 20%;
-  top: 15%;
+  top: 25%;
 }
 
 .imagePerfil img:hover {
@@ -117,25 +117,45 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+#Skills h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 #Skills {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espaçamento entre as skills */
   position: absolute;
   color: #fff;
   left: 50%;
   transform: translateX(-50%);
   top: 100%;
+  width: 80%; /* Ajuste conforme necessário */
 }
 
 #Skills img {
-  width: 80px;
-  height: 80px;
-  margin-top: 20px;
-  align-items: center;
-  align-content: center;
+  width: auto;
+  height: 120px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 #Skills img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+
+#title-projects {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150%;
+  margin-top: 40px;
+} 
