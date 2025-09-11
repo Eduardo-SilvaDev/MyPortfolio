@@ -5,14 +5,10 @@
   scrollbar-width: none;
 }
 
-title {
-  color: #d41a1a;
-}
-
 body {
   font-family: sans-serif;
   background: #101829;
-  z-index: 1;
+  min-height: 100vh;
 }
 
 header {
@@ -32,7 +28,7 @@ header {
   transition: background 0.3s;
 }
 
-#logo {
+.logo {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -61,14 +57,34 @@ nav a:hover {
   color: #101829;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 120px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.right {
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+}
+
 #welcome {
-  display: inline-block;
-  position: absolute;
-  z-index: 10;
-  color: aliceblue;
-  font-size: 3rem;
-  top: 60%;
-  left: 5%;
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 32px 0 24px 0;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -83,33 +99,13 @@ nav a:hover {
   }
 }
 
-.AboutMe {
-  display: inline-block;
-  position: absolute;
-  color: #fff;
-  left: 80%;
-  transform: translateX(-50%);
-  top: 20%;
-}
-
-.AboutMe h1 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.AboutMe p {
-  text-align: right;
-  font-family: sans-serif, inter;
-}
-
 .imagePerfil img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  position: absolute;
-  left: 20%;
-  top: 25%;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 32px;
+  display: block;
 }
 
 .imagePerfil img:hover {
@@ -117,29 +113,18 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-#Skills h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 #Skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Espaçamento entre as skills */
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;
-  width: 80%; /* Ajuste conforme necessário */
+  gap: 24px;
+  margin-top: 24px;
 }
 
 #Skills img {
-  width: auto;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   margin: 0;
   transition: transform 0.3s ease-in-out;
 }
@@ -153,9 +138,32 @@ nav a:hover {
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 150%;
-  margin-top: 40px;
-} 
+  margin-top: 60px;
+}
+
+.AboutMe {
+  color: #fff;
+  max-width: 500px;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.AboutMe h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.AboutMe p {
+  text-align: center;
+  font-family: sans-serif, inter;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #172749;
+  color: #fff;
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+}
